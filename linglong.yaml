@@ -1,0 +1,37 @@
+version: "1.0"
+package:
+  id: com.onbonbx.ledshowsuite.linyaps
+  name: LedShowSuite
+  version: 0.1.0.41
+  kind: app
+  description: 支持字库卡5代/6代、单双色5代/6代、多媒体播放器Y系列、多媒体播放器C系列、视频处理器、发送卡、接收卡(5xx程序).
+    <insert long description, indented with spaces>
+command:
+  - /opt/apps/com.onbonbx.ledshowsuite.linyaps/files/bin/start.sh
+base: org.deepin.foundation/20.0.0
+sources:
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/libx/libxkbcommon/libxkbcommon-x11-0_0.8.2-1_amd64.deb
+    digest: 387f2e36c582b123f7988f250f3ab739a7f3a54e5b507d4e5fa445cd1c43f61a
+  - kind: file
+    url: https://community-packages.deepin.com/deepin/apricot/pool/main/l/lame/libmp3lame0_3.100.1-1+rebuild_amd64.deb
+    digest: 123d1042e02a70b559e1d47b3272b5ef4ecb8819e5fd24ad00f3cc4f793bdbbc
+build: >-
+  export LINGLONG_RAW_ID="com.onbonbx.ledshowsuite"
+
+  export LINGLONG_APP_ID="com.onbonbx.ledshowsuite.linyaps"
+
+  export LINGLONG_APP_NAME="LedShowSuite"
+
+  export LINGLONG_APP_VERSION="0.1.0.41"
+
+  export LINGLONG_APP_KIND="app"
+
+  export
+  LINGLONG_APP_DESC="支持字库卡5代/6代、单双色5代/6代、多媒体播放器Y系列、多媒体播放器C系列、视频处理器、发送卡、接收卡(5xx程序).
+  <insert long description, indented with spaces>"
+
+  export
+  LINGLONG_COMMAND="/opt/apps/com.onbonbx.ledshowsuite.linyaps/files/bin/start.sh"
+
+  exec /project/build.sh
