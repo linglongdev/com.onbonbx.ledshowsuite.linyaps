@@ -1,0 +1,12 @@
+libxkbcommon-x11-0
+libxkbcommon0
+xkb-data
+libc6
+libgcc1
+gcc-8-base
+libxcb-xkb1
+libxcb1
+libxau6
+libxdmcp6
+libbsd0
+libmp3lame0
